@@ -20,10 +20,15 @@
           };
         },
         methods: {
-            clickMe() {
-                alert('Button clicked')
+          clickMe() {
+            alert("Button clicked");
+            if (this.message == "Updated Message") {
+              this.message = "Hello from Vue";
+            } else {
+              this.message = "Updated Message";
             }
-        }
+          },
+        },
       });
       app.mount("#app");
     </script>
